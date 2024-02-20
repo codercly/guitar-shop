@@ -2,7 +2,7 @@ const data = {
   products: [
     {
       name: 'Ibanez Guitar',
-      slug: 'ibaez-guitar',
+      slug: 'ibanez-guitar',
       category: 'super-estrato',
       image: '/images/guitar1.jpg',
       price: 70,
@@ -43,8 +43,8 @@ const data = {
       banner: '/images/banner3.jpg',
     },
     {
-      name: 'SG-Guitars',
-      slug: 'sg-guitars',
+      name: 'SG-Guitar',
+      slug: 'sg-guitar',
       category: 'SG',
       image: '/images/guitar4.jpg',
       price: 70,
