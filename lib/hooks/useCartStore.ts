@@ -1,4 +1,4 @@
-import create from 'zustand'
+import { create } from 'zustand'
 import { round2 } from '../utils'
 import { OrderItem } from '../models/OrderModel'
 import { persist } from 'zustand/middleware'
