@@ -36,7 +36,15 @@ export const cartStore = create<Cart>()(
 )
 
 export default function useCartService() {
-  const { items, itemsPrice, taxPrice, shippingPrice, totalPrice, paymentMethod, shippingAddress } = cartStore()
+  const {
+    items,
+    itemsPrice,
+    taxPrice,
+    shippingPrice,
+    totalPrice,
+    paymentMethod,
+    shippingAddress,
+  } = cartStore()
   return {
     items,
     itemsPrice,
@@ -85,6 +93,11 @@ export default function useCartService() {
     savePaymentMethod: (paymentMethod: string) => {
       cartStore.setState({
         paymentMethod,
+      })
+    },
+    clear: () => {
+      cartStore.setState({
+        items: [],
       })
     },
   }
