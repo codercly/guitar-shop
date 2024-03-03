@@ -24,9 +24,10 @@ export default async function Home() {
             id={`slide-${index}`}
             className="carousel-item relative w-full"
           >
-            <Link href={`product/${product.slug}`}>
+            <img alt={product.name} src={product.banner} className="w-full" />
+            {/* <Link href={`product/${product.slug}`}>
               <img alt={product.name} src={product.banner} className="w-full" />
-            </Link>
+            </Link> */}
             <div
               className="absolute flex justify-between transform 
                -translate-y-1/2 left-5 right-5 top-1/2"
